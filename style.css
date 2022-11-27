@@ -4,4 +4,56 @@ html,body{
     overflow-x:hidden;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+#logo{
+    text-decoration: none;
+    color: rgb(245,243,160);
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: 'Kaushan Script', cursive;
+    text-shadow: 1px 1px 4px rgb(0,0,0);
+}
+.logo__container{
+    margin:0px 15px;
+    
+
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    
+}
+nav{
+    margin:0px 15px;
+    
+}
+.nav__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-inline-start: 0px;
+}
+.nav__list a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+.nav__list a:hover{
+    text-decoration: underline;
+    color: black;
+    font-size: 24px;
+    letter-spacing: 2px;
+    transition: 0.75s;
+}
+.nav__list li{
+    list-style: none;
 }
