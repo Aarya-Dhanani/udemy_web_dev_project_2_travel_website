@@ -10,12 +10,17 @@ html,body{
 #logo{
     text-decoration: none;
     color: rgb(245,243,160);
-    font-size: 40px;
+    font-size: 30px;
     text-transform: capitalize;
     font-family: 'Kaushan Script', cursive;
     text-shadow: 1px 1px 4px rgb(0,0,0);
 }
 .logo__container{
+    margin:0px 15px;
+    
+
+}
+.side_logo__container{
     margin:0px 15px;
     
 
@@ -29,9 +34,26 @@ header{
     top: 0;
     bottom: 0;
     left: 0;
+    position: fixed;
     
 }
-nav{
+.navbar{
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    
+}
+.nav{
+    margin:0px 15px;
+    
+}
+.side_nav{
     margin:0px 15px;
     
 }
@@ -44,7 +66,7 @@ nav{
 }
 .nav__list a{
     text-decoration: none;
-    color: black;
+    color: yellow;
     font-size: 22px;
 }
 .nav__list a:hover{
@@ -56,4 +78,140 @@ nav{
 }
 .nav__list li{
     list-style: none;
+}
+
+.side_nav__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-inline-start: 0px;
+}
+.side_nav__list a{
+    text-decoration: none;
+    color: yellow;
+    font-size: 22px;
+}
+.side_nav__list a:hover{
+    text-decoration: underline;
+    color: black;
+    font-size: 24px;
+    letter-spacing: 2px;
+    transition: 0.75s;
+}
+.side_nav__list li{
+    list-style: none;
+}
+#hero{
+    height:800px;
+    width:100%;
+    background-image: url("img/home.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#hero-content{
+    width: 30%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    vertical-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px 100px;
+    border-radius: 10px;
+    background-color: rgba(51,47,47,0.7);
+    letter-spacing: 2px;
+    transform: translate(0px,350px);
+    box-shadow: 2px 4px 8px rgb(68,67,67);
+}
+#hero-content h1, #hero-content h3{
+    color: white;
+}
+#hero-content a{
+    text-decoration: none;
+    background-color: yellow;
+    color: black;
+    border-radius: 10px;
+    padding: 7px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#menu{
+    display: none;
+    color: yellow;
+}
+#close{
+    display: none;
+    color: yellow;
+}
+.container-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+#highlights{
+    background-color: #c3ebf9;
+    padding: 1px 0px;
+    height: 60vh;
+}
+#highlights h1{
+    font-size: 35px;
+    font-weight: bolder;
+    margin: 60px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    width: 25%;
+}
+.card img{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 20px;
+    
+}
+.card h3 span{
+    color: rgb(57, 57, 140);
+    
+}
+
+
+/* media queries */
+@media  screen and (max-width:460px) {
+    #hero{
+        margin-top: -20px;
+    }
+    #hero-content{
+        width: 100%;
+        padding: 0px;
+    }
+    #menu{
+        display: block;
+        margin: 10px 15px;
+    }
+    #close{
+        display: none;
+        margin: 10px 15px;
+    }
+    .navbar{
+        flex-wrap: nowrap;
+    justify-content: start;
+    flex-direction: column;
+    display: none;
+    margin: 0px 20px;
+    }
+    
+    .logo__container{
+        display: none;
+    }
+    .nav{
+        display: none;
+    }
 }
